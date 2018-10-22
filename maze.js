@@ -13,4 +13,15 @@ window.onload = function(){
                      }
                  });
              }
+    let end = document.getElementById("end").addEventListener("mouseover",comp);
+    function comp(){
+    if(document.getElementById("boundary1").className==="boundary youlose"){
+       document.getElementById("status").textContent="You Lose!"
+    }
+    else{
+        document.getElementById("status").textContent = "You Win!"
+    }
+};
+
+
 }
